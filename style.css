@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(17, 170, 17);
+   
+  }
+h1{
+  color: black;
+  font-family:"MedievalSharp";
+  text-align: center;
+  }
+.paragraph{
+  color:rgb(17, 120, 120);
+  font-family:"consolas", sans-serif;
+}
+.header{
+  color:rgb(82, 69, 158);
+  font-family: "consolas", sans-serif;
+}
+.button a{
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:"consolas", sans-serif;
+}
+.button a:hover {
+  background-color: #4b4606;
+  color: rgb(87, 198, 12);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:"consolas", sans-serif;
+}
