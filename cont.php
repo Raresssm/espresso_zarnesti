@@ -1,18 +1,26 @@
 <?php
-    include("database.php");
-?>
+include("database.php");
 
-<?php
 $username = isset($_POST["user"]) ? $_POST["user"] : null;
 $password = isset($_POST["pass"]) ? $_POST["pass"] : null;
-$interogare = "INSERT INTO cont (username, password)
- VALUES ('$username' , '$password')";
-mysqli_query($conn,$interogare);
 
-if (mysqli_errno($conn))
- exit('<br>Adaugare esuata: '.mysqli_errno($conn).": ".mysqli_error($conn)."<BR>");
+// Use prepared statement to prevent SQL injection
+$interogare = $conn->prepare("INSERT INTO cont (username, password) VALUES (?, ?)");
+$interogare->bind_param("ss", $username, $hashedPassword);
+
+// Hash the password securely
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+// Execute the prepared statement
+$interogare->execute();
+
+// Check for errors
+if ($interogare->errno) {
+    exit('<br>Adaugare esuata: ' . $interogare->errno . ": " . $interogare->error . "<BR>");
+}
 
 echo "Conectare reusita!";
 
-mysqli_close($conn);
-?> 
+$interogare->close();
+$conn->close();
+?>

@@ -1,33 +1,56 @@
 body {
-    background-color: rgb(17, 170, 17);
-   
-  }
-h1{
-  color: black;
-  font-family:"MedievalSharp";
+  background-color: #f4ede9; /* Light beige background */
+  font-family: 'Roboto', sans-serif; /* Default font family */
+  margin: 0 20px 40px;; /* Add left and right margins of 20px */
+
+}
+
+h1 {
+  color: #3e3021; /* Dark brown heading color */
+  font-family: 'Irish Grover', cursive; /* Custom font for heading */
   text-align: center;
-  }
-.paragraph{
-  color:rgb(17, 120, 120);
-  font-family:"consolas", sans-serif;
 }
-.header{
-  color:rgb(82, 69, 158);
-  font-family: "consolas", sans-serif;
+h2{
+font-family: 'Rubik Doodle Shadow', cursive;
 }
-.button a{
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family:"consolas", sans-serif;
+.button{
+text-align: center;
+font-family: "Rubik Doodle Shadow", sans-serif;
+font-size: 24px;
 }
-.button a:hover {
-  background-color: #4b4606;
-  color: rgb(87, 198, 12);
-  padding: 14px 25px;
+.up_b {
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family:"consolas", sans-serif;
+  background-color: transparent; /* Dark brown button background */
+  color: #3e3021; /* Light beige button text */
+  margin-right: 10px; /* Add some spacing between buttons */
+  transition: color 0.3s; /* Smooth transition effect for text color */
+}
+
+.up_b:hover {
+  color: #0000FF; 
+}
+
+.paragraph {
+  color: #6b4423; /* Changed font color to a warm brown tone */
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px; /* Added padding for better readability */
+}
+
+.header {
+  color: #3e3021; /* Deep brown header text color */
+}
+
+footer {
+  background-color: #6d4c41; /* Dark brown footer background */
+  color: #f4ede9; /* Light beige footer text color */
+  text-align: center;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
