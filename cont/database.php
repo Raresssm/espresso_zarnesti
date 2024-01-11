@@ -8,10 +8,10 @@ $db_name = "cafenea";
 
 try {
     // Attempt to establish a database connection
-    $conn = new mysqli($db_server, $db_user, $db_pass, $db_name);
+    $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
 
     // Continue with other code if the connection is successful
 } catch (mysqli_sql_exception $e) {
-    exit ("Conectare esuata!");
+    exit("Conectare esuata!");
 }
 ?>
