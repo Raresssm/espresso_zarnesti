@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Indie+Flower&family=Irish+Grover&family=Montserrat:ital,wght@1,300&family=Roboto:wght@300;400&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="index">
+    <header>
     <h1>Espresso Zărnești</h1>
-    <div class="button">
+    <nav class="button">
         <a href="#acasa" class="up_b" >Acasă</a>
         <a href="#locatie" class="up_b" >Unde ne gasesti?</a>
         <a href="meniu.html" class="up_b" >Meniu</a>
         <a href="#despre" class="up_b" >Despre Noi</a>
         <a href="#contact" class="up_b" >Contact</a>
         <a href="cont/login.html" class="up_b" >Cont</a>
-    </div>
-
+        <a href="#" id="logoffButton" class="up_b" style="margin-left: 10px;">Log Off</a>
+        <div id="userIconContainer"></div>
+    </nav>
+    <div id="welcomeMessage"></div>
+    </header>
   <section id="acasa" class="paragraph">
     <h2 class="header">Acasă</h2>
     <p>Bine ați venit la Espresso Zărnești, locul unde pasiunea pentru cafea se întâlnește cu confortul și gustul autentic. <br>
@@ -42,28 +46,30 @@
 
     <section id="locatie" class="paragraph">
         <h2 class="header">Unde ne gasesti?</h2>
-        <p>Descoperiți selecția noastră de băuturi calde și reci, precum și gustări delicioase. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla sed corporis consequuntur laudantium voluptas soluta nobis non. Aliquid in reprehenderit debitis, error fugit vero animi aspernatur? Provident, illum numquam?
+        <p>Vă așteptăm cu drag în locația noastră centrală din Zărnești, unde veți descoperi un ambient primitor și o varietate bogată de băuturi și gustări. Adresa noastră este Str. Cafelei, Nr. 42. Cu o locație ușor accesibilă, suntem la doar câțiva pași de principalele atracții turistice și de zonele de interes din oraș. Vă invităm să ne vizitați și să descoperiți aroma noastră unică de cafea într-un mediu prietenos și primitoare.<br>
+        Deschiderea zilnică: Luni - Duminică, 8:00 - 20:00.
         </p>
     </section>
 
     <section id="despre" class="paragraph">
         <h2 class="header">Despre Noi</h2>
-        <p>Suntem o cafenea cu o pasiune pentru cafea și servicii excelente. Aflați mai multe despre echipa noastră și istoria noastră. <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis esse quod officia necessitatibus cupiditate minima, eveniet, commodi at et, in accusantium iusto enim voluptatum sunt modi perferendis odit reprehenderit provident?
+        <p>
+        Cu o pasiune profundă pentru cafea și servicii impecabile, Espresso Zărnești a devenit un reper în comunitatea locală. Fondată în 2010 de către entuziaști ai cafelei, cafeneaua noastră se remarcă prin amestecurile exclusiviste de cafea, prăjituri artizanale și atmosfera caldă pe care o oferim. Echipa noastră dedicată și experiența noastră îndelungată fac din Espresso Zărnești destinația perfectă pentru iubitorii de cafea.
+
         </p>
     </section>
 
     <section id="contact" class="paragraph">
         <h2 class="header">Contact</h2>
-        <p>Pentru rezervări și întrebări, ne puteți contacta la adresa de email: <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi corporis molestias? Ducimus, amet quae sed harum quidem necessitatibus minus cum, distinctio laudantium et nisi recusandae voluptatum, obcaecati inventore ea!
-         </p>
+        <p>Suntem aici pentru a răspunde întrebărilor tale și a primi feedback-ul tău. Pentru rezervări, întrebări sau orice altă informație, nu ezita să ne contactezi. Puteți să ne trimiteți un email la contact@espresso-zarnesti.ro sau să ne sunați la numărul de telefon +40 XXX XXX XXX. Echipa noastră amabilă este disponibilă pentru a vă oferi informațiile de care aveți nevoie și a vă face experiența la Espresso Zărnești cât mai plăcută. Te așteptăm cu drag!
+        
+        </p>
     </section>
 
     <footer>
         <p>&copy; 2023 Espresso Zărnești, Brașov</p>
     </footer>
+    <script src="userStatus.js" defer></script>
     
 </body>
 </html>

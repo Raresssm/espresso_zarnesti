@@ -1,24 +1,27 @@
-body {
+.index{
   background-color: #f4ede9; /* Light beige background */
   font-family: 'Roboto', sans-serif; /* Default font family */
-  margin: 0 20px 40px;; /* Add left and right margins of 20px */
-
+  margin-bottom:40px;
+  position: relative;
 }
 
-h1 {
+.index h1 {
   color: #3e3021; /* Dark brown heading color */
   font-family: 'Irish Grover', cursive; /* Custom font for heading */
   text-align: center;
 }
-h2{
+.index h2{
 font-family: 'Rubik Doodle Shadow', cursive;
 }
-.button{
+.index .button{
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically in the center */
 text-align: center;
 font-family: "Rubik Doodle Shadow", sans-serif;
 font-size: 24px;
 }
-.up_b {
+.index .up_b {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -26,31 +29,155 @@ font-size: 24px;
   background-color: transparent; /* Dark brown button background */
   color: #3e3021; /* Light beige button text */
   margin-right: 10px; /* Add some spacing between buttons */
-  transition: color 0.3s; /* Smooth transition effect for text color */
+ 
 }
 
-.up_b:hover {
-  color: #0000FF; 
+.index .up_b:hover {
+  animation: rainbowAnimation 4s infinite linear;
+  font-size: 30px;
+}
+.index #welcomeMessage{
+  align-items: center; /* Align items vertically in the center */
+  text-align: center;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+  font-size: 24px;
+}
+.index #welcomeMessage:hover {
+  color: #f00; /* Red */
+  animation: rainbowAnimation 4s infinite linear; /* Rainbow color animation */
+  font-size: 25px; /* Increase font size on hover */
+  transform: scale(1); /* Increase size without affecting centering */
 }
 
-.paragraph {
+@keyframes rainbowAnimation {
+  0% {
+    color: #f00; /* Red */
+  }
+  16% {
+    color: rgb(251, 251, 251); 
+  }
+  33% {
+    color: rgb(5, 51, 5); /* Green */
+  }
+  50% {
+    color: rgb(17, 148, 148); /* Cyan */
+  }
+  66% {
+    color: rgb(32, 32, 49); /* Blue */
+  }
+  83% {
+    color: rgb(106, 43, 9); /* Magenta */
+  }
+  100% {
+    color: #f00; /* Back to Red */
+  }
+}
+
+.index .paragraph {
   color: #6b4423; /* Changed font color to a warm brown tone */
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  padding: 20px; /* Added padding for better readability */
+  padding: 10px; /* Added padding for better readability */
 }
 
-.header {
+.index .header {
   color: #3e3021; /* Deep brown header text color */
 }
 
-footer {
+.index #contact{
+  margin-bottom:20px;
+}
+
+.index footer {
   background-color: #6d4c41; /* Dark brown footer background */
   color: #f4ede9; /* Light beige footer text color */
   text-align: center;
-  padding: 1px;
   position: fixed;
   bottom: 0;
+  height: 7%;
   width: 100%;
+}
+.menu body {
+  font-family: 'Roboto', sans-serif; /* Default font family */
+  background-color: #f4ede9;
+  margin: 0;
+  padding: 0;
+}
+
+.menu h1 {
+  text-align: center;
+  color: #333;
+  font-family: 'Irish Grover', cursive; /* Custom font for heading */
+}
+
+.menu h2 {
+  font-family: 'Rubik Doodle Shadow', cursive;
+}
+
+.menu .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu .coffee-box {
+  width: 250px;
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(240, 224, 209);
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Rubik Doodle Shadow', sans-serif; /* Custom font for coffee boxes */
+}
+
+.menu .coffee-box:hover {
+  transform: scale(1.05);
+}
+
+.menu .coffee-image-box {
+  margin-bottom: 10px;
+}
+
+.menu .coffee-image {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 10px;
+}
+
+.menu .coffee-button {
+  cursor: pointer;
+  color: #333;
+  border: none;
+  padding: 16px 32px; /* Adjusted padding for larger buttons */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px; /* Adjusted font size for larger buttons */
+  border-radius: 5px;
+  background: linear-gradient(to right, transparent 50%, #c49e7a 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-in-out, color 0.5s ease-in-out;
+  font-family: 'Rubik Doodle Shadow', sans-serif; /* Adding font family */
+}
+
+.menu .coffee-button:hover {
+  background-position: -100% 0;
+  color: white;
+}
+
+.menu .coffee-details {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.menu .coffee-details p {
+  margin: 5px 0;
+  color: #333;
 }

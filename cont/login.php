@@ -22,13 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_start();
             $_SESSION['username'] = $username;
 
-            // Redirect to the main page or dashboard (assuming index.html is in the parent directory)
-            header("Location: ../index.html");
+            // Redirect to the main page or dashboard (assuming index.php is in the parent directory)
+            header("Location: ../index.php");
             exit();
         } else {
+            // Set an error message for display in the login form
             $errorMessage = "Login failed. Please check your username and password.";
         }
     } else {
+        // Set an error message for display in the login form
         $errorMessage = "Error occurred during login.";
     }
 
