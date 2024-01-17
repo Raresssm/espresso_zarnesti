@@ -15,7 +15,8 @@ function showPosition(latitude, longitude) {
     // Show the map panel
     mapPanel.style.display = 'block';
 
-    // Add styling to the map panel (optional)
+    // Apply styling to the map panel
+    mapPanel.style.width = '40%';  // Set the width to 40%
     mapPanel.style.border = '2px solid #ddd';
     mapPanel.style.padding = '10px';
     mapPanel.style.borderRadius = '8px';
