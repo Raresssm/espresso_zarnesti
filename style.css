@@ -80,6 +80,12 @@ font-size: 24px;
   font-weight: 700;
   padding: 10px; /* Added padding for better readability */
 }
+.index #mapPanel {
+  border: 2px solid #ddd; /* Set the border style, width, and color */
+  padding: 10px; /* Add padding to create space between the content and the border */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+}
 
 .index .header {
   color: #3e3021; /* Deep brown header text color */

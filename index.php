@@ -12,7 +12,7 @@
     <h1>Espresso Zărnești</h1>
     <nav class="button">
         <a href="#acasa" class="up_b" >Acasă</a>
-        <a href="#locatie" class="up_b" >Unde ne gasesti?</a>
+        <a href="#locatie" class="up_b" onclick="getLocation()">Unde ne gasesti?</a>
         <a href="meniu.html" class="up_b" >Meniu</a>
         <a href="#despre" class="up_b" >Despre Noi</a>
         <a href="#contact" class="up_b" >Contact</a>
@@ -49,6 +49,7 @@
         <p>Vă așteptăm cu drag în locația noastră centrală din Zărnești, unde veți descoperi un ambient primitor și o varietate bogată de băuturi și gustări. Adresa noastră este Str. Cafelei, Nr. 42. Cu o locație ușor accesibilă, suntem la doar câțiva pași de principalele atracții turistice și de zonele de interes din oraș. Vă invităm să ne vizitați și să descoperiți aroma noastră unică de cafea într-un mediu prietenos și primitoare.<br>
         Deschiderea zilnică: Luni - Duminică, 8:00 - 20:00.
         </p>
+        <div id="mapPanel" style="display: none;"></div>
     </section>
 
     <section id="despre" class="paragraph">
@@ -70,6 +71,7 @@
         <p>&copy; 2023 Espresso Zărnești, Brașov</p>
     </footer>
     <script src="userStatus.js" defer></script>
+    <script src="geolocation.js"></script>
     
 </body>
 </html>
